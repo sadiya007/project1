@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Welcome bookworms
+{% endblock %}
+
+{% block body %}
+    <h1>Welcome to the website bookworms! </h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <div class="form-group">
+            <input class="form-control" name="username" placeholder="username">
+
+            <input class="form-control" name="password" placeholder="password">
+            {{Invalid_username_message}}
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary">Login!</button>
+        </div>
+
+    </form>
+
+
+
+{% endblock %}
