@@ -20,7 +20,7 @@
             <input class="form-control" name="lastname" placeholder="Last Name" value="{{ request.form['lastname']}}">
             <input class="form-control" name="username" placeholder="username" value="{{ request.form['username']}}">
             {{usernameexists_message}}
-            <input class="form-control" name="password" placeholder="password" value="{{ request.form['password']}}">
+            <input class="form-control" name="password" type="password" placeholder="password" value="{{ request.form['password']}}">
             {{fieldempty_message}}
             {{success_message}}
         </div>

@@ -7,10 +7,26 @@
 {% block body %}
     <h1>Welcome to the website bookworms! </h1>
 
-        <div class="form-group">
-            <h6>Hello and welcome. Let's get started.</h6>
-        </div>
+      <div class="form-group">
+          <h6>Hello and welcome. Let's get started.</h6>
+          <h6>Search Books</h6>
 
+            <form action="{{ url_for('search') }}" method="post">
+
+                <div class="form-group">
+                    <input class="form-control" name="search" placeholder="Search by Title, Author or ISBN">
+                </div>
+
+                <div class="form-group">
+                    <button class="btn btn-primary">Search</button>
+                </div>
+            </form>
         </div>
+        <br />
+        <form action="{{ url_for('logout') }}" method="post">
+          <div class="form-group">
+              <button class="btn btn-primary">Logout</button>
+          </div>
+          <form
     </form>
 {% endblock %}
