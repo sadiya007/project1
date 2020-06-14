@@ -45,4 +45,4 @@ Implemented
 
 The password field entry has been masked with black dots. The passwords are stored in hash format in database userdata table.
 
-Youtube video https://youtu.be/cum97C_ouro
+Youtube video https://www.youtube.com/watch?v=g8LLW3hIMbQ&t=61s
